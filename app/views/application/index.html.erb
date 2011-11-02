@@ -4,12 +4,28 @@
   });
 </script>
 
-<span id="follow-placeholder"></span>
-  <script type="text/javascript">
+<script type="text/javascript">
  
-    twttr.anywhere(function (T) {
-      T("#follow-placeholder").followButton('anywhere');
-    });
+  twttr.anywhere(function (T) {
+    T.linkifyUsers();
+  });
  
-  </script>
-Good
+</script>
+<div id="tbox"></div>
+<script type="text/javascript">
+ 
+  twttr.anywhere(function (T) {
+    T("#tbox").tweetBox();
+  });
+ 
+</script>
+
+<span id="login"></span>
+<script type="text/javascript">
+ 
+  twttr.anywhere(function (T) {
+    T("#login").connectButton();
+  });
+ 
+</script>
+@Anywhere was made possible by @ded, @dsa, @todd, @danwrong, @noradio, and the rest of the @twitter team.
